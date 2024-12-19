@@ -1,0 +1,110 @@
+/* Header styling */
+.headerelement {
+    display: flex;
+    align-items: center;
+    background-color: darkblue;
+    padding: 10px 20px;
+}
+
+.headerelement h1 {
+    margin: 0;
+    margin-right: auto;
+    color: white;
+    font-size: 24px;
+}
+
+.headerelement input {
+    border: none;
+    border-radius: 20px;
+    height: 35px;
+    width: 400px;
+    padding: 0 15px;
+    margin-right: 10px;
+}
+
+.headerelement button {
+    border: none;
+    border-radius: 7px;
+    height: 37px;
+    width: 80px;
+    background-color: white;
+    color: darkblue;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.headerelement button:hover {
+    background-color: lightblue;
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkblue;
+    color: white;
+    height: 35px;
+    width: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Product grid styling */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card button {
+    background-color: darkblue;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: navy;
+}
